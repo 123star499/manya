@@ -10,7 +10,8 @@
 	<style>
 		html,body
 		{
-			overflow-x:hidden
+			overflow-x:hidden;
+			scroll-behavior: smooth;
 		}
 	</style>
 </head>
@@ -18,7 +19,7 @@
 	<div class="container-fluid" style="background: #f8ecd7;">
         <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background: #511d00;">
         <div class="container-fluid">
-             <a class="navbar-brand fw-bold" style="color:yellow;font-family: Harlow Solid Italic;"  href="#demo">Manyavar</a>
+             <a class="navbar-brand fw-bold" style="color:yellow;font-family: Arial;"  href="#demo">Manyavar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
              <span class="navbar-toggler-icon"></span>
             </button>
@@ -103,9 +104,17 @@
                     </div>
                 </div>
     </div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+        $('.js-scroll-trigger,body').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+
 </body>
 
 </html>
+
 
 
 
